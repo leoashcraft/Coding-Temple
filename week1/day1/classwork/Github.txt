@@ -1,0 +1,50 @@
+Git make your reposity -
+
+echo "# testrepo" >> README.md (or create it within file explorer or visual studio)
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin http://github.com/your_user_name/my_repo.git
+git push -u origin main
+
+
+
+
+update your git reposity -
+
+git add .
+git commit -m "I changed x functionality"
+git push -u origin main
+To work with someone else's repo:
+Go to github and fork their reposity
+then on your computer:
+git clone http://github.com/your_user_name/your_forked_repo.git
+
+
+
+
+Make edits to your version and push them back to github -
+
+git add .
+git commit -m "I changed x functionality"
+git push -u origin main
+To make a pull request:
+after you have uploaded your updated fork of the repo to github on the github repo you can go to the pull requests tab and then create pull request and follow the prompts
+To update your repo to match the forked repo:
+git remote add upstream http://github.com/origin_user_name_of_forked_repo/forked_repo.git
+git pull upstream main
+
+
+
+
+To make a pull request:
+
+After you have uploaded your updated fork of the repo to github on the github repo you can go to the pull requests tab and then create pull request and follow the prompts
+To update your repo to match the forked repo:
+git remote add upstream http://github.com/origin_user_name_of_forked_repo/forked_repo.git
+git pull upstream main
+
+always make sure you in in the cloned repo's directory / in you repo directory when running these commands from the terminal/command prompt
+
+Github Pull Requests: https://www.neonscience.org/resources/learning-hub/tutorials/github-pull-requests
