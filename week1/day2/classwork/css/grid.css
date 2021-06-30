@@ -1,0 +1,35 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr .5fr;
+    grid-template-areas: 
+                    "header header header"
+                    "side main side2"
+                    "footer footer footer";
+}
+
+#header{
+    grid-area:header;
+    background-color:red;
+}
+
+#footer{
+    grid-area:footer;
+    background-color:green;
+}
+
+#content{
+    grid-area: main;
+    background-color: blue;
+}
+
+#sidebar{
+    grid-area: side;
+    background-color:purple;
+}
+
+#side2{
+    grid-area: side2;
+    background-color:yellow;
+
+}
