@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+  }
+
+.wrapper{
+    margin-top: 75px;
+    display: grid;
+    grid-gap:0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "a b c d"
+      "e f g h"
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    height: 150px;
+    width: auto;
+    border: 1px;
+    border-style: solid;
+    border-color:lightgray;
+}
+
+/* Leaving this here but I noticed that if I didn't define the grid-area, it defaults to auto?
+
+#r1c1{
+    grid-area: a;
+}
+
+#r1c2{
+    grid-area: b;
+}
+
+#r1c3{
+    grid-area: c;
+}
+
+#r1c4{
+    grid-area: d;
+}
+
+#r2c1{
+    grid-area: e;
+}
+
+#r2c2{
+    grid-area: f;
+}
+
+#r2c3{
+    grid-area: g;
+}
+
+#r2c4{
+    grid-area: h;
+}
+
+*/
